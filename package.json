@@ -1,0 +1,18 @@
+{
+  "name": "@pegasus-ds/root",
+  "version": "1.0.0",
+  "description": "Pegasus Design System Implementation in React.js",
+  "scripts": {
+    "app:start": "pnpm --filter @pegasus-ds/front-app run dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aelamel/Pegasus-DS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aelamel/Pegasus-DS/issues"
+  },
+  "homepage": "https://github.com/aelamel/Pegasus-DS#readme"
+}
