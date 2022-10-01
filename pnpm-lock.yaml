@@ -7,6 +7,7 @@ importers:
 
   apps/front-app:
     specifiers:
+      '@pegasus-ds/ui-components': workspace:^1.0.0
       '@types/react': ^18.0.17
       '@types/react-dom': ^18.0.6
       '@vitejs/plugin-react': ^2.1.0
@@ -14,6 +15,7 @@ importers:
       react-dom: ^18.2.0
       vite: ^3.1.0
     dependencies:
+      '@pegasus-ds/ui-components': link:../../packages/ui-components
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
     devDependencies:
@@ -21,6 +23,17 @@ importers:
       '@types/react-dom': 18.0.6
       '@vitejs/plugin-react': 2.1.0_vite@3.1.4
       vite: 3.1.4
+
+  packages/ui-components:
+    specifiers:
+      '@types/react': ^18.0.17
+      react: ^18.2.0
+      typescript: ^4.8.4
+    dependencies:
+      react: 18.2.0
+    devDependencies:
+      '@types/react': 18.0.21
+      typescript: 4.8.4
 
 packages:
 
@@ -852,6 +865,12 @@ packages:
   /to-fast-properties/2.0.0:
     resolution: {integrity: sha512-/OaKK0xYrs3DmxRYqL/yDc+FxFUVYhDlXMhRmv3z915w2HF1tnN1omB354j8VUGO/hbRzyD6Y3sA7v7GS/ceog==}
     engines: {node: '>=4'}
+    dev: true
+
+  /typescript/4.8.4:
+    resolution: {integrity: sha512-QCh+85mCy+h0IGff8r5XWzOVSbBO+KfeYrMQh7NJ58QujwcE22u+NUSmUxqF+un70P9GXKxa2HCNiTTMJknyjQ==}
+    engines: {node: '>=4.2.0'}
+    hasBin: true
     dev: true
 
   /update-browserslist-db/1.0.9_browserslist@4.21.4:
