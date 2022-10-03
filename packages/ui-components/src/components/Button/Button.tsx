@@ -1,6 +1,7 @@
+import MuiButton from "@mui/material/Button"
 export const Button = () => {
 
     return (
-        <button>Click me</button>
+        <MuiButton variant="contained" disableElevation size="large" >Click me</MuiButton>
     )
 }
