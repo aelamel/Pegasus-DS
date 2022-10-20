@@ -1,5 +1,10 @@
 import { createTheme } from '@mui/material/styles';
 import {ButtonCommonStyles, ButtonVariants} from "../components/Button/styles";
+import {
+    AccordionDefaultProps,
+    AccordionDetailsDefaultProps,
+    AccordionSummaryDefaultProps, AccordionVariants
+} from "../components/Accordion/styles";
 
 declare module '@mui/material/Button' {
     interface ButtonPropsVariantOverrides {
@@ -13,7 +18,7 @@ export const theme = createTheme({
         primary: {
             main: '#5F2EEA',
             dark: "#2A00A2",
-            light: "#BCA4FF"
+            light: "#BCA4FF",
         },
         secondary: {
             main: '#FF0000',
@@ -37,7 +42,7 @@ export const theme = createTheme({
         },
         common:{
             black: "#000000",
-            white: "#FFFFFF"
+            white: "#FFFFFF",
         }
     },
     components:{
@@ -48,6 +53,22 @@ export const theme = createTheme({
                 size: "large",
             },
             variants:ButtonVariants()
+        },
+        MuiAccordion:{
+          defaultProps:{
+              sx: AccordionDefaultProps()
+          },
+            variants: AccordionVariants()
+        },
+        MuiAccordionSummary:{
+            defaultProps:{
+                sx: AccordionSummaryDefaultProps()
+            }
+        },
+        MuiAccordionDetails:{
+            defaultProps:{
+                sx:AccordionDetailsDefaultProps()
+            }
         }
     }
 });
