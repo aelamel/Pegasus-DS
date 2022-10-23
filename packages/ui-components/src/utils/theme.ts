@@ -5,6 +5,7 @@ import {
     AccordionDetailsDefaultProps,
     AccordionSummaryDefaultProps, AccordionVariants
 } from "../components/Accordion/styles";
+import {InputSxDefaultProps} from "../components/Input/styles";
 
 declare module '@mui/material/Button' {
     interface ButtonPropsVariantOverrides {
@@ -69,6 +70,12 @@ export const theme = createTheme({
             defaultProps:{
                 sx:AccordionDetailsDefaultProps()
             }
-        }
+        },
+        MuiInputBase:{
+            defaultProps:{
+                sx:InputSxDefaultProps()
+            },
+
+        },
     }
 });
